@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil Saya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #f0f0f0;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .brand {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px 20px;
+      border-bottom: 1px solid #ccc;
+      gap: 20px;
+    }
+
+    .header .text {
+      flex: 1;
+    }
+
+    .header .text h1 {
+      margin-top: 0;
+    }
+
+    .learn-more-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      border: 1px solid #999;
+      background-color: white;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+
+    .header .image {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .placeholder-img {
+      width: 600px;
+      height: 400px;
+      background-color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .biodata {
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .biodata h2 {
+      margin-bottom: 10px;
+    }
+
+    .biodata table {
+      width: 100%;
+      max-width: 100%;
+      table-layout: fixed;
+      border-spacing: 15px;
+    }
+
+    .biodata td {
+      background-color: #f0f0f0;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .portofolio {
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .portofolio h2 {
+      margin-bottom: 20px;
+    }
+
+    .portfolio-items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .portfolio-item {
+      flex: 1;
+      min-width: 250px;
+      max-width: 32%;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .portfolio-image {
+      width: 100%;
+      height: 200px;
+      background-color: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-item p {
+      margin: 5px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .portfolio-item {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section 1: Menu -->
+  <nav>
+    <div class="brand">Brand</div>
+    <div class="nav-links">
+      <a href="#header">Header</a>
+      <a href="#biodata">Biodata</a>
+      <a href="#portofolio">Portofolio</a>
+    </div>
+  </nav>
+
+  <!-- Section 2: Header -->
+  <section class="header" id="header">
+    <div class="text">
+      <h1>Selamat Datang di Website Saya</h1>
+      <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+      <a href="#" class="learn-more-btn">Pelajari Lebih Lanjut</a>
+    </div>
+    <div class="image">
+      <div class="placeholder-img">600 × 400</div>
+    </div>
+  </section>
+
+  <!-- Section 3: Biodata -->
+  <section class="biodata" id="biodata">
+    <h2>About Me</h2>
+    <p>A brief introduction about myself</p>
+    <table>
+      <tr>
+        <td>Full Name</td>
+        <td>Education</td>
+        <td>Pekerjaan</td>
+      </tr>
+      <tr>
+        <td>Contact</td>
+        <td>Hobi</td>
+        <td>Alamat</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Section 4: Portofolio -->
+  <section class="portofolio" id="portofolio">
+    <h2>Portofolio</h2>
+    <div class="portfolio-items">
+      <div class="portfolio-item">
+        <div class="portfolio-image">350 × 200</div>
+        <p><strong>Proyek 1</strong></p>
+        <p>Deskripsi proyek 1.</p>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-image">350 × 200</div>
+        <p><strong>Proyek 2</strong></p>
+        <p>Deskripsi proyek 2.</p>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-image">350 × 200</div>
+        <p><strong>Proyek 3</strong></p>
+        <p>Deskripsi proyek 3.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
